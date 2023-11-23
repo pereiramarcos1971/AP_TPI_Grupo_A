@@ -1,11 +1,9 @@
-package org.arg_prog;
-
-import org.arg_prog.Entidades.TipoServicio;
-import org.arg_prog.Repository.Dao.Dao;
-import org.arg_prog.Repository.Dao.JpaDao;
-import org.arg_prog.Repository.JpaTipoServicioRepository;
-import org.arg_prog.Repository.TipoServicioRepository;
-import org.arg_prog.Servicios.TipoServicioService;
+import Entidades.TipoServicio;
+import Repository.Dao.Dao;
+import Repository.Dao.JpaDao;
+import Repository.JpaTipoServicioRepository;
+import Repository.TipoServicioRepository;
+import Servicios.TipoServicioService;
 
 public class Main {
     public static void main(String[] args) {

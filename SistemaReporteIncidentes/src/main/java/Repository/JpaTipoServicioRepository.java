@@ -1,7 +1,7 @@
-package org.arg_prog.Repository;
+package Repository;
 
-import org.arg_prog.Entidades.TipoServicio;
-import org.arg_prog.Repository.Dao.Dao;
+import Entidades.TipoServicio;
+import Repository.Dao.Dao;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
