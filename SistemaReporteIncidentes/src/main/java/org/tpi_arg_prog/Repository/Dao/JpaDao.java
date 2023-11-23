@@ -1,4 +1,4 @@
-package Repository.Dao;
+package org.tpi_arg_prog.Repository.Dao;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

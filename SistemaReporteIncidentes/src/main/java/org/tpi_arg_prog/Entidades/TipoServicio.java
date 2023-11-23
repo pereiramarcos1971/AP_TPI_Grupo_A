@@ -1,4 +1,4 @@
-package Entidades;
+package org.tpi_arg_prog.Entidades;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

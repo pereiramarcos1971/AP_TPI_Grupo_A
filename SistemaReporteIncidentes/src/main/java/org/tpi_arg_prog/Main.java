@@ -1,9 +1,11 @@
-import Entidades.TipoServicio;
-import Repository.Dao.Dao;
-import Repository.Dao.JpaDao;
-import Repository.JpaTipoServicioRepository;
-import Repository.TipoServicioRepository;
-import Servicios.TipoServicioService;
+package org.tpi_arg_prog;
+
+import org.tpi_arg_prog.Entidades.TipoServicio;
+import org.tpi_arg_prog.Repository.Dao.Dao;
+import org.tpi_arg_prog.Repository.Dao.JpaDao;
+import org.tpi_arg_prog.Repository.JpaTipoServicioRepository;
+import org.tpi_arg_prog.Repository.TipoServicioRepository;
+import org.tpi_arg_prog.Servicios.TipoServicioService;
 
 public class Main {
     public static void main(String[] args) {

@@ -9,7 +9,7 @@ http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
 
         <!--        <class>clase_siete.entity.Fichaje</class>-->
 
-        <class>Entidades.TipoServicio</class>
+        <class>org.tpi_arg_prog.Entidades.TipoServicio</class>
 
 
         <properties>

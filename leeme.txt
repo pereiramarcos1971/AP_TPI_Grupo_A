@@ -1,0 +1,22 @@
+Adjuntamos entrega del Grupo A conformado por
+
+Marcos Pereira
+Valeria Aristegui
+Soledad Baldrich
+Mabel Pietrobon
+Cecilia Morales
+
+El mismo consta de
+
+DER_Incidentes.pdf (DER en formato PDF)
+
+DER_INCIDENTES.sql (script para la creacion de la base de datos MySQL INCIDENTES)
+
+DER_Incidentes.mwb (DER en Workbench)
+
+SistemaReporteIncidentes.zip (Proyecto Maven)
+En el proyecto llegamos a implementar la clase tipo_servicios completa con persistencia.
+
+Todo esta en el siguiente repositorio GitHub
+
+https://github.com/pereiramarcos1971/AP_TPI_Grupo_A/tree/MARCOS

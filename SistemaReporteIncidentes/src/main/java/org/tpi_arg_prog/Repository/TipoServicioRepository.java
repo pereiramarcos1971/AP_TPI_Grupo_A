@@ -1,6 +1,6 @@
-package Repository;
+package org.tpi_arg_prog.Repository;
 
-import Entidades.TipoServicio;
+import org.tpi_arg_prog.Entidades.TipoServicio;
 
 import java.util.List;
 
