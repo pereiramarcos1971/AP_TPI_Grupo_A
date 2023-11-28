@@ -1,7 +1,7 @@
 package org.tpi_arg_prog.Servicios;
 
 import org.tpi_arg_prog.Entidades.TipoServicio;
-import org.tpi_arg_prog.Repository.TipoServicioRepository;
+import org.tpi_arg_prog.Repository.Interfaces.TipoServicioRepository;
 
 import java.util.List;
 
@@ -22,7 +22,9 @@ public class TipoServicioService {
         return tipoServicioRepository.getById(idTipoServicio);
     }
 
-    public List<TipoServicio> getAll(String descripcion) {
+
+
+    public List<TipoServicio> getAll() {
         return tipoServicioRepository.getAll();
     }
 

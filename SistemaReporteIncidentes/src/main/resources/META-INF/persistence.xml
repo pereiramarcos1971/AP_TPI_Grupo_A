@@ -5,15 +5,25 @@
 http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
     <persistence-unit name="JPA_PU" transaction-type="RESOURCE_LOCAL">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-        <!--        <class>clase_siete.entity.Empleado</class>-->
-
-        <!--        <class>clase_siete.entity.Fichaje</class>-->
 
         <class>org.tpi_arg_prog.Entidades.TipoServicio</class>
+        <class>org.tpi_arg_prog.Entidades.TipoProblema</class>
+        <class>org.tpi_arg_prog.Entidades.Tecnico</class>
+        <class>org.tpi_arg_prog.Entidades.Cliente</class>
+        <class>org.tpi_arg_prog.Entidades.Servicio</class>
+        <class>org.tpi_arg_prog.Entidades.TecnicoEspecialidad</class>
+        <class>org.tpi_arg_prog.Entidades.ServicioCliente</class>
+        <class>org.tpi_arg_prog.Entidades.ProblemaServicio</class>
+        <class>org.tpi_arg_prog.Entidades.Incidente</class>
+        <class>org.tpi_arg_prog.Entidades.IncidenteAsignado</class>
+        <class>org.tpi_arg_prog.Entidades.ReporteTecnico</class>
+
+
+
 
 
         <properties>
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/incidentes_prueba?zeroDateTimeBehavior=convertToNull&amp;serverTimezone=UTC"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/incidentes_tpi?zeroDateTimeBehavior=convertToNull&amp;serverTimezone=UTC"/>
             <property name="javax.persistence.jdbc.user" value="root"/>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
             <property name="javax.persistence.jdbc.password" value=""/>

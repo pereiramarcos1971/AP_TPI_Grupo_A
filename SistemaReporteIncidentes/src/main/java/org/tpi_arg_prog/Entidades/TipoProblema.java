@@ -8,15 +8,21 @@ import javax.persistence.*;
 @Entity
 @Data
 @NoArgsConstructor
-@Table(name="tipos_servicios")
-public class TipoServicio {
+@Table(name="tipos_problema")
+public class TipoProblema {
+
 
     @Id
-    @Column(name = "id_tipo_servicio")
+    @Column(name = "id_tipo_problema")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int idTipoServicio;
+    private int idTipoProblema;
 
     @Column(name="descripcion")
     private String descripcion;
+
+
+
+
+
 
 }

@@ -1,4 +1,4 @@
-package org.tpi_arg_prog.Repository;
+package org.tpi_arg_prog.Repository.Interfaces;
 
 import org.tpi_arg_prog.Entidades.TipoServicio;
 

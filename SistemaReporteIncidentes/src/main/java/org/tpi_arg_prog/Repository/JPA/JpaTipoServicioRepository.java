@@ -1,7 +1,8 @@
-package org.tpi_arg_prog.Repository;
+package org.tpi_arg_prog.Repository.JPA;
 
 import org.tpi_arg_prog.Entidades.TipoServicio;
 import org.tpi_arg_prog.Repository.Dao.Dao;
+import org.tpi_arg_prog.Repository.Interfaces.TipoServicioRepository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
@@ -60,11 +61,17 @@ public class JpaTipoServicioRepository implements TipoServicioRepository {
 
     }
 
+
     @Override
     public List<TipoServicio> getAll(){
 
-        System.out.println("trayendo todos los TipoServicio de la base");
-        return null;
+        System.out.println("trayendo los TipoServicio desde la base");
+        EntityManager entityManager = dao.getEntityManager();
+        try {
+            return entityManager.createNativeQuery("SELECT descripcion FROM tipos_servicios").getResultList();
+        } finally {
+            entityManager.close();
+        }
 
     }
 
