@@ -15,7 +15,7 @@ DER_INCIDENTES.sql (script para la creacion de la base de datos MySQL INCIDENTES
 DER_Incidentes.mwb (DER en Workbench)
 
 SistemaReporteIncidentes.zip (Proyecto Maven)
-En el proyecto llegamos a implementar la clase tipo_servicios completa con persistencia.
+En el proyecto no pude imprimir los reportes en pantalla.
 
 Todo esta en el siguiente repositorio GitHub
 
