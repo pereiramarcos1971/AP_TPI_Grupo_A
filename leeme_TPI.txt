@@ -16,7 +16,8 @@ DER_INCIDENTES.sql (script para la creacion de la base de datos MySQL INCIDENTES
 DER_Incidentes.mwb (DER en Workbench)
 
 SistemaReporteIncidentes.zip (Proyecto Maven)
-En el proyecto no pude imprimir los reportes en pantalla.
+En el proyecto puede imprimir los reportes en pantalla solo con SQL embebido, intente hacerlo con store procedures, pero no pude.
+De todos modos, en el TP hice un reporte con SQL, para evidenciar esto.
 
 Todo esta en el siguiente repositorio GitHub
 
