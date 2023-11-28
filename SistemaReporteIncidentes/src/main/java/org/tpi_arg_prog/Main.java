@@ -285,6 +285,20 @@ public class Main {
 
         /* Reportes */
 
+
+        // Reporte  con query
+
+        ReporteTecnicoRepository reporteTecnicoRepository = new JpaReporteTecnicoRepository(dao);
+
+        ReporteTecnicoService reporteTecnicoService =new ReporteTecnicoService(reporteTecnicoRepository);
+
+        List<ReporteTecnico> tecnicoConMasIncidentesResueltosEnNDias = reporteTecnicoService.getTecnicoConMasIncidentesResueltosEnNDias(1);
+
+        System.out.println("Imprimir el Reporte 1");
+
+        tecnicoConMasIncidentesResueltosEnNDias.forEach(resultado->System.out.println(resultado));
+
+
         /*
         // Reporte 1
         List<Tecnico> tecnicoConMasIncidentesResueltosEnNDias = tecnicoService.getTecnicoConMasIncidentesResueltosEnNDias(1);
@@ -293,17 +307,19 @@ public class Main {
 
         tecnicoConMasIncidentesResueltosEnNDias.forEach(resultado->System.out.println(resultado));
 
+        */
+
         //Reporte 2
-        List<Tecnico> tecnicoConMasIncidentesResueltosParaServicioEnNDias = tecnicoService.getTecnicoConMasIncidentesResueltosParaServicioEnNDias("Dymanics", 1);
+        List<ReporteTecnico> tecnicoConMasIncidentesResueltosParaServicioEnNDias = reporteTecnicoService.getTecnicoConMasIncidentesResueltosParaServicioEnNDias("Dynamics", 1);
 
         System.out.println("Imprimir el Reporte 2");
 
         tecnicoConMasIncidentesResueltosParaServicioEnNDias.forEach(resultado->System.out.println(resultado));
 
-*/
+
 
         //Reporte 3
-        List<Tecnico> tecnicoMasRapido = tecnicoService.getTecnicoMasRapido();
+        List<ReporteTecnico> tecnicoMasRapido = reporteTecnicoService.getTecnicoMasRapido();
 
         System.out.println("Imprimir el Reporte 3");
 
