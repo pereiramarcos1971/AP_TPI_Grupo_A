@@ -38,14 +38,38 @@ public class JpaTipoProblemaRepository implements TipoProblemaRepository {
     }
 
     @Override
+    public void delete(TipoProblema tipoProblema) {
+
+        System.out.println("borrando el TipoProblema desde la base");
+        EntityManager entityManager = dao.getEntityManager();
+        EntityTransaction transaction = entityManager.getTransaction();
+
+        try {
+            transaction.begin();
+            entityManager.remove(tipoProblema);
+            transaction.commit();
+        } catch (Exception e) {
+            if (transaction.isActive()) {
+                transaction.rollback();
+            }
+            e.printStackTrace();
+        } finally {
+            entityManager.close();
+        }
+    }
+
+
+    @Override
     public void update(TipoProblema tipoProblema) {
         System.out.println("actualizando el TipoProblema desde la base");
     }
 
-    @Override
-    public void delete(int idTipoProblema) {
+
+/*    @Override
+   public void delete(int idTipoProblema) {
         System.out.println("borrando el TipoProblema desde la base");
     }
+*/
 
     @Override
     public  TipoProblema getById(int idTipoProblema){

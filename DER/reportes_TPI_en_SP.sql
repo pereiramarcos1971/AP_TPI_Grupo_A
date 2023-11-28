@@ -1,7 +1,7 @@
 DELIMITER $$
 CREATE DEFINER=`root`@`localhost` PROCEDURE `tecnico_con_mas_incidentes_resueltos_en_n_dias`(dias int)
 BEGIN
-SELECT CONCAT(a.apellido,  ', ',  a.nombre)
+SELECT CONCAT(a.apellido,  ', ',  a.nombre) as nombre
 FROM
 (
 	SELECT t.id_tecnico, t.apellido, t.nombre,  COUNT(ia.id_incidente) as cant_incidentes

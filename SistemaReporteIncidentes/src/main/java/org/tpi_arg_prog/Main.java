@@ -29,7 +29,15 @@ public class Main {
         tp.setDescripcion("Pantalla de inicio no funciona");
         tipoProblemaService.guardarTipoProblema(tp);
 
-        TipoProblema tipoProblemaConsulta = tipoProblemaService.getById(1);
+
+        TipoProblema tp2 = new TipoProblema();
+        tp2.setIdTipoProblema(2);
+        tp2.setDescripcion("Pantalla de fin no funciona");
+        tipoProblemaService.guardarTipoProblema(tp2);
+
+
+        TipoProblema tipoProblemaConsulta = tipoProblemaService.getById(2);
+       // tipoProblemaService.borrarTipoProblema(tipoProblemaConsulta);
 
         System.out.println(tipoProblemaConsulta);
 

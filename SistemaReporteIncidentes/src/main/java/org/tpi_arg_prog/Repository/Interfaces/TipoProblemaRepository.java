@@ -10,6 +10,6 @@ public interface TipoProblemaRepository {
     List<TipoProblema> getAll();
     void save(TipoProblema tipoProblema);
     void update(TipoProblema tipoProblema);
-    void delete(int idTipoProblema);
+    void delete(TipoProblema tipoProblema);
 
 }

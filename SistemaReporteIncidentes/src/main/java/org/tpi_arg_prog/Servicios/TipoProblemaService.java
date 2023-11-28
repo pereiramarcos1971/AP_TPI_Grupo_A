@@ -26,6 +26,10 @@ public class TipoProblemaService {
         return tipoProblemaRepository.getAll();
     }
 
+    public void borrarTipoProblema(TipoProblema tipoProblema){
+        tipoProblemaRepository.delete(tipoProblema);
+    }
+
 
 
 }
